@@ -2,20 +2,11 @@
 
 set -x
 
-DOTFILES=/home/user/dotfiles
+REPO=/home/user/dotfiles
 
-files[0]=/etc/cron.d/dotfiles
-files[1]=/etc/crontab
+cd $REPO
 
-
-home_files[0]=.config/openbox/rc.xml
-
-
-for item in ${files[*]}; do
-  cp -a --parents $item ${DOTFILES}/
-done
-
-for item in ${home_files[*]}; do
-  cp -a --parents /home/user/$item ${DOTFILES}/
+for item in $(find ./ -type f ! -path '*/.git*'); do
+  cp -a --parents /$item ${REPO}/
 done
 
