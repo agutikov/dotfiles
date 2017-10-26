@@ -1,8 +1,8 @@
 #!/bin/bash
 
-set -x
+set -xeu
 
-REPO=/home/user/dotfiles
+REPO=${HOME}/dotfiles
 
 cd $REPO
 
