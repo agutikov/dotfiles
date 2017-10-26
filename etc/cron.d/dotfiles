@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -x
+
+DOTFILES=/home/user/dotfiles
+
+files[0]=/etc/cron.d/dotfiles
+files[1]=/etc/crontab
+
+
+home_files[0]=.config/openbox/rc.xml
+
+
+for item in ${files[*]}; do
+  cp -a --parents $item ${DOTFILES}/
+done
+
+for item in ${home_files[*]}; do
+  cp -a --parents /home/user/$item ${DOTFILES}/
+done
+
