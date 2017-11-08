@@ -1,5 +1,6 @@
 #!/bin/bash
 
+date
 set -xeu
 
 REPO=${HOME}/dotfiles
