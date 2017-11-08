@@ -19,3 +19,5 @@ ws-butler plugin
 
 
 
+emacsclient init.el
+
