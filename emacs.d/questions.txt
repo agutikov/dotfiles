@@ -20,3 +20,5 @@ ws-butler plugin
 
 
 
+molokai-theme and helm-fuzzy-find not auto-installed
+
