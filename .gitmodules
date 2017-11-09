@@ -1,0 +1,3 @@
+[submodule "emacs.d/emacs-c-ide-demo"]
+	path = emacs.d/emacs-c-ide-demo
+	url = git@github.com:tuhdo/emacs-c-ide-demo.git
