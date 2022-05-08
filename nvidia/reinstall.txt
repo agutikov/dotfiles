@@ -1,0 +1,13 @@
+
+
+bumblebee-nvidia primus-nvidia primus-vk-nvidia
+
+nvidia-legacy-390xx-driver firmware-misc-nonfree
+
+xserver-xorg-input-mouse xserver-xorg-input-kbd
+
+
+sudo update-glx --config nvidia
+
+
+sudo systemctl start bumblebeed.service
